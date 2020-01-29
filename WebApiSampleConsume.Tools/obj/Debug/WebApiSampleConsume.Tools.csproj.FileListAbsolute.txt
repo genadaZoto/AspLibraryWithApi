@@ -1,0 +1,17 @@
+C:\Users\Mike\source\repos\WebApiSampleConsume\WebApiSampleConsume.Tools\obj\Debug\WebApiSampleConsume.Tools.csprojAssemblyReference.cache
+C:\Users\Mike\source\repos\WebApiSampleConsume\WebApiSampleConsume.Tools\obj\Debug\WebApiSampleConsume.Tools.csproj.CoreCompileInputs.cache
+C:\Users\Mike\source\repos\WebApiSampleConsume\WebApiSampleConsume.Tools\bin\Debug\WebApiSampleConsume.Tools.dll
+C:\Users\Mike\source\repos\WebApiSampleConsume\WebApiSampleConsume.Tools\bin\Debug\WebApiSampleConsume.Tools.pdb
+C:\Users\Mike\source\repos\WebApiSampleConsume\WebApiSampleConsume.Tools\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Mike\source\repos\WebApiSampleConsume\WebApiSampleConsume.Tools\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Mike\source\repos\WebApiSampleConsume\WebApiSampleConsume.Tools\obj\Debug\WebApiSampleConsume.Tools.csproj.CopyComplete
+C:\Users\Mike\source\repos\WebApiSampleConsume\WebApiSampleConsume.Tools\obj\Debug\WebApiSampleConsume.Tools.dll
+C:\Users\Mike\source\repos\WebApiSampleConsume\WebApiSampleConsume.Tools\obj\Debug\WebApiSampleConsume.Tools.pdb
+C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibrary\WebApiSampleConsume.Tools\bin\Debug\WebApiSampleConsume.Tools.dll
+C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibrary\WebApiSampleConsume.Tools\bin\Debug\WebApiSampleConsume.Tools.pdb
+C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibrary\WebApiSampleConsume.Tools\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibrary\WebApiSampleConsume.Tools\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibrary\WebApiSampleConsume.Tools\obj\Debug\WebApiSampleConsume.Tools.csprojAssemblyReference.cache
+C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibrary\WebApiSampleConsume.Tools\obj\Debug\WebApiSampleConsume.Tools.csproj.CopyComplete
+C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibrary\WebApiSampleConsume.Tools\obj\Debug\WebApiSampleConsume.Tools.dll
+C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibrary\WebApiSampleConsume.Tools\obj\Debug\WebApiSampleConsume.Tools.pdb

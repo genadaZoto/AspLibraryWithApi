@@ -1,0 +1,29 @@
+﻿@foreach (Library.Models.BookModel item in Model)
+{
+   
+
+}
+<div class="row text-center">
+    @foreach (Library.Models.BookModel item in Model)
+    {
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="@item.Image" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">@item.Title</h4>
+                    <p class="card-text">@item.Author</p>
+                </div>
+                <div class="card-footer">
+                    @{
+                        if (Library.ModelTools.SessionUtils.IsConnected)
+                        {
+                            <form action="~/Member/AddBook/Index">
+                                <input class="btn btn-primary" type="hidden" name="IdBook" value="@item.IdBook" /><br />
+                                <button>Borrow</button>
+                            </form>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    }

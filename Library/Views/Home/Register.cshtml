@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+}
+
+<form class="formulaire" action="/Home/Register" method="post" enctype="multipart/form-data">
+    @*Create a Token to avoid forms attacks*@
+    @Html.AntiForgeryToken()
+    @*IMPORTANT: WITHOUT ENCTYPE, NO FILES CAN BE UPLOADED*@
+    <div class="text-center">
+        <h1 class="h4 text-gray-900 mb-4">Register</h1>
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control form-control-user" id="Name" name="Name" placeholder="Your name...">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control form-control-user" id="Surname" name="Surname" placeholder="Your surname...">
+    </div>
+    <div class="form-group">
+        <input type="email" class="form-control form-control-user" id="Email" name="Email" placeholder="Your email...">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control form-control-user" id="Adress" name="Adress" placeholder="Your adress...">
+    </div>
+    <div class="form-group">
+        <input type="password" required class="form-control form-control-user" id="Password" name="Password" placeholder="Your password">
+    </div>
+    <div class="form-group">
+        <input type="password" required class="form-control form-control-user" id="RepeatPassword" name="ConfirmPassword" placeholder="Confirm password">
+    </div>
+
+    <div class="form-group">
+        <input type="file" required class="form-control form-control-user" id="ProfilePicture" name="ProfilePicture">
+    </div>
+    <input type="submit" class="btn btn-primary btn-user btn-block" value="Enregistrer" />
+    <hr>
+
+    @if (@ViewBag.ErrorMessage != null)
+    {
+
+        <center>
+            <p class="alert alert-danger">@Html.Raw(ViewBag.ErrorMessage)</p>
+        </center>
+    }
+</form>

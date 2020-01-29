@@ -1,0 +1,58 @@
+﻿@model Library.Areas.Member.Models.ProfileModel
+
+
+
+
+<div>
+    <h4>ProfileModel</h4>
+    <hr />
+    <div class="row">
+        <div class="col-2">
+            <div>
+                Nom
+            </div>
+            <div>
+                @Model.Name
+            </div>
+        </div>
+        <br />
+        <div class="col-2">
+            <div>
+                Prénom
+            </div>
+            <div>
+                @Model.Surname
+            </div>
+        </div>
+        <br />
+        <div class="col-2">
+            <div>
+                Surnom
+            </div>
+            <div>
+                @Model.Adress
+            </div>
+        </div>
+        <br />
+        <div class="col-2">
+            <div>
+                Email
+            </div>
+            <div>
+                @Model.Email
+            </div>
+        </div>
+        <div class="col-2">
+
+            <div>
+                <img src="@Model.Photo" />
+            </div>
+        </div>
+    </div>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+        @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+    </td>
+</div>
+

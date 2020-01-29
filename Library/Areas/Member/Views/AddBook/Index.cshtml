@@ -1,0 +1,47 @@
+﻿@model Library.Models.BookModel
+
+
+
+<h2>You just added this book</h2>
+
+
+<div>
+    <hr />
+    <div class="row">
+        <div class="col-2">
+            <div>
+                Nom
+            </div>
+            <div>
+                @Model.Title
+            </div>
+        </div>
+        <br />
+        <div class="col-2">
+            <div>
+                Prénom
+            </div>
+            <div>
+                @Model.Category
+            </div>
+        </div>
+        <br />
+        <div class="col-2">
+            <div>
+                Surnom
+            </div>
+            <div>
+                @Model.Description
+            </div>
+        </div>
+        <br />
+        <div class="col-2">
+
+            <div>
+                <img src="@Model.Image" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
