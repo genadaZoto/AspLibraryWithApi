@@ -25,7 +25,7 @@ namespace DAL.Repositories
         {
             OpenLibraryRequester ORequester = new OpenLibraryRequester();
 
-            bookModel bm = ORequester.GetInfos("0451526538");
+            bookModel bm = ORequester.GetInfos("0451526538 ");
 
             if (bm != null)
             {
@@ -38,10 +38,10 @@ namespace DAL.Repositories
                 b.Title = bm.title;
                 foreach (var item in bm.subjects)
                 {
-                    b.Category = b.Author + item.name + ",";
+                    b.Category = b.Category + item.name + ",";
                 }
                 b.Description = bm.notes;
-                b.Image = bm.cover.medium;
+                b.Image = bm.cover.large;
                 b.ReleaseYear = int.Parse(bm.publish_date);
                
                 Insert(b);

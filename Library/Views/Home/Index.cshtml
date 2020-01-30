@@ -1,29 +1,47 @@
-﻿@foreach (Library.Models.BookModel item in Model)
-{
-   
+﻿<!-- Page Content -->
+<div class="container">
 
-}
-<div class="row text-center">
-    @foreach (Library.Models.BookModel item in Model)
-    {
-        <div class="col-lg-3 col-md-6 mb-4">
-            <div class="card h-100">
-                <img class="card-img-top" src="@item.Image" alt="">
-                <div class="card-body">
-                    <h4 class="card-title">@item.Title</h4>
-                    <p class="card-text">@item.Author</p>
-                </div>
-                <div class="card-footer">
-                    @{
-                        if (Library.ModelTools.SessionUtils.IsConnected)
-                        {
-                            <form action="~/Member/AddBook/Index">
-                                <input class="btn btn-primary" type="hidden" name="IdBook" value="@item.IdBook" /><br />
-                                <button>Borrow</button>
-                            </form>
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4">
+        <p class="display-3">
+            Reading gives us someplace to go when we have to stay where we are.
+        </p>
+        <h6>–Mason Cooley</h6>
+        <div class="search">
+            <form method="post" action="/Home/Search">
+                <input class="search" type="text" name="txtSearch" placeholder="Search..." />
+                <button class="btn btn-primary btn-lg" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+
+    </header>
+
+    <!-- Page Features -->
+    <div class="row text-center">
+        @foreach (Library.Models.BookModel item in Model)
+        {
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="@item.Image" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">@item.Title</h4>
+                        <p class="card-text">@item.Author</p>
+                    </div>
+                    <div class="card-footer">
+                        @{
+                            if (Library.ModelTools.SessionUtils.IsConnected)
+                            {
+                                <form action="~/Member/AddBook/Index">
+                                    <input class="btn btn-primary" type="hidden" name="IdBook" value="@item.IdBook" /><br />
+                                    <button>Borrow</button>
+                                </form>
+                            }
                         }
-                    }
+                    </div>
                 </div>
             </div>
-        </div>
-    }
+        }
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->

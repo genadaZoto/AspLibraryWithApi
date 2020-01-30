@@ -85,7 +85,7 @@ namespace Library.Models
         {
             get
             {
-                return GetPhoto();
+                return _image;
             }
             set
             {
@@ -106,22 +106,22 @@ namespace Library.Models
             }
         }
 
-        private string GetPhoto()
-        {
-            string folderpath = System.Web.Hosting.HostingEnvironment.MapPath("~/BookImages/");
-            string[] PicturesFiles = Directory.GetFiles(folderpath, IdBook + ".*");
+        //private string GetPhoto()
+        //{
+        //    string folderpath = System.Web.Hosting.HostingEnvironment.MapPath("~/BookImages/");
+        //    string[] PicturesFiles = Directory.GetFiles(folderpath, IdBook + ".*");
 
-            if (PicturesFiles.Count() > 0)
-            {
-                FileInfo i = new FileInfo(PicturesFiles[0]);
+        //    if (PicturesFiles.Count() > 0)
+        //    {
+        //        FileInfo i = new FileInfo(PicturesFiles[0]);
 
-                return "/BookImages/" + i.Name;
-            }
-            else
-            {
-                return "";
-            }
-        }
+        //        return "/BookImages/" + i.Name;
+        //    }
+        //    else
+        //    {
+        //        return "";
+        //    }
+        //}
 
     }
 }

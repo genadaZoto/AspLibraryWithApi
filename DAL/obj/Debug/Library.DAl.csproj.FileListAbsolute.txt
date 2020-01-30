@@ -56,3 +56,16 @@ C:\Users\g.zoto\Downloads\michaelProject\Library\AspLibrary\DAL\bin\Debug\WebApi
 C:\Users\g.zoto\Downloads\michaelProject\Library\AspLibrary\DAL\bin\Debug\Newtonsoft.Json.dll
 C:\Users\g.zoto\Downloads\michaelProject\Library\AspLibrary\DAL\bin\Debug\WebApiSampleConsume.Tools.pdb
 C:\Users\g.zoto\Downloads\michaelProject\Library\AspLibrary\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\g.zoto\Downloads\michaelProject\LibraryWithApi\AspLibrary\DAL\bin\Debug\DAL.dll
+C:\Users\g.zoto\Downloads\michaelProject\LibraryWithApi\AspLibrary\DAL\bin\Debug\DAL.pdb
+C:\Users\g.zoto\Downloads\michaelProject\LibraryWithApi\AspLibrary\DAL\bin\Debug\Tool.dll
+C:\Users\g.zoto\Downloads\michaelProject\LibraryWithApi\AspLibrary\DAL\bin\Debug\WebApiSampleConsume.Tools.dll
+C:\Users\g.zoto\Downloads\michaelProject\LibraryWithApi\AspLibrary\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\g.zoto\Downloads\michaelProject\LibraryWithApi\AspLibrary\DAL\bin\Debug\Tool.pdb
+C:\Users\g.zoto\Downloads\michaelProject\LibraryWithApi\AspLibrary\DAL\bin\Debug\WebApiSampleConsume.Tools.pdb
+C:\Users\g.zoto\Downloads\michaelProject\LibraryWithApi\AspLibrary\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\g.zoto\Downloads\michaelProject\LibraryWithApi\AspLibrary\DAL\obj\Debug\Library.DAL.csprojAssemblyReference.cache
+C:\Users\g.zoto\Downloads\michaelProject\LibraryWithApi\AspLibrary\DAL\obj\Debug\Library.DAL.csproj.CoreCompileInputs.cache
+C:\Users\g.zoto\Downloads\michaelProject\LibraryWithApi\AspLibrary\DAL\obj\Debug\Library.DAL.csproj.CopyComplete
+C:\Users\g.zoto\Downloads\michaelProject\LibraryWithApi\AspLibrary\DAL\obj\Debug\DAL.dll
+C:\Users\g.zoto\Downloads\michaelProject\LibraryWithApi\AspLibrary\DAL\obj\Debug\DAL.pdb
