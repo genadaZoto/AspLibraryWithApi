@@ -15,3 +15,11 @@ C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibrary\WebApiSampleConsume.T
 C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibrary\WebApiSampleConsume.Tools\obj\Debug\WebApiSampleConsume.Tools.csproj.CopyComplete
 C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibrary\WebApiSampleConsume.Tools\obj\Debug\WebApiSampleConsume.Tools.dll
 C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibrary\WebApiSampleConsume.Tools\obj\Debug\WebApiSampleConsume.Tools.pdb
+C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibraryWithApi\WebApiSampleConsume.Tools\bin\Debug\WebApiSampleConsume.Tools.dll
+C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibraryWithApi\WebApiSampleConsume.Tools\bin\Debug\WebApiSampleConsume.Tools.pdb
+C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibraryWithApi\WebApiSampleConsume.Tools\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibraryWithApi\WebApiSampleConsume.Tools\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibraryWithApi\WebApiSampleConsume.Tools\obj\Debug\WebApiSampleConsume.Tools.csprojAssemblyReference.cache
+C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibraryWithApi\WebApiSampleConsume.Tools\obj\Debug\WebApiSampleConsume.Tools.csproj.CopyComplete
+C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibraryWithApi\WebApiSampleConsume.Tools\obj\Debug\WebApiSampleConsume.Tools.dll
+C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibraryWithApi\WebApiSampleConsume.Tools\obj\Debug\WebApiSampleConsume.Tools.pdb

@@ -25,14 +25,14 @@ namespace DAL.Repositories
         {
             OpenLibraryRequester ORequester = new OpenLibraryRequester();
 
-            bookModel bm = ORequester.GetInfos("0451526538 ");
+            bookModel bm = ORequester.GetInfos("0781441900");
 
             if (bm != null)
             {
                 Book b = new Book();
                 foreach (var item in bm.authors)
                 {
-                    b.Author = b.Author + item.name + ",";
+                    b.Author = b.Author + item.name + " ";
                 }
 
                 b.Title = bm.title;
@@ -42,7 +42,7 @@ namespace DAL.Repositories
                 }
                 b.Description = bm.notes;
                 b.Image = bm.cover.large;
-                b.ReleaseYear = int.Parse(bm.publish_date);
+                //b.ReleaseYear = int.Parse(bm.publish_date);
                
                 Insert(b);
                 return (b);

@@ -21,7 +21,7 @@ namespace Library.Controllers
             BookRepository BR = new BookRepository(ConfigurationManager.ConnectionStrings["CnstrDev"].ConnectionString);
             //List<BookModel> Lbm = BR.GetAll().Select(b => MapToDbModels.BookToBookModel(b)).ToList();
 
-            Book book = BR.getBookFromApi();
+            //Book book = BR.getBookFromApi();
             List<BookModel> Lbm = BR.GetAll().Select(b => MapToDbModels.BookToBookModel(b)).ToList();
             return View(Lbm);
         }
