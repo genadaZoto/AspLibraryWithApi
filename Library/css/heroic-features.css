@@ -15,8 +15,9 @@ body {
 
 .logo {
     font-size: 30px;
+    font-weight: 700;
     font-family:'Adobe Arabic';
-    color: orangered;
+    color:white;
 }
 .nav-item {
     color: white !important;
@@ -35,3 +36,13 @@ body {
    padding:  50px;
 }
 
+a{
+   color: white;
+}
+a:hover{
+    text-underline-position: below;
+}
+
+.formulaire{
+    padding: 4% 30%;
+}
