@@ -16,13 +16,18 @@ namespace Library.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Index(int id=1)
         {
+            ViewBag.CurrentPage = id;
             BookRepository BR = new BookRepository(ConfigurationManager.ConnectionStrings["CnstrDev"].ConnectionString);
             //List<BookModel> Lbm = BR.GetAll().Select(b => MapToDbModels.BookToBookModel(b)).ToList();
+            int nb = BR.getNbBooks();
 
             //Book book = BR.getBookFromApi();
-            List<BookModel> Lbm = BR.GetAll().Select(b => MapToDbModels.BookToBookModel(b)).ToList();
+            List<BookModel> Lbm = BR.Paginate(id, 8).Select(b => MapToDbModels.BookToBookModel(b)).ToList();
+            
+            ViewBag.MaxPages = Math.Round((double)BR.getNbBooks() / 8);
+
             return View(Lbm);
         }
 

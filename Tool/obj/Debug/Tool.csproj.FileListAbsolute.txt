@@ -14,3 +14,8 @@ C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibrary\AspLibrary\Tool\bin\D
 C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibrary\AspLibrary\Tool\obj\Debug\Tool.csprojAssemblyReference.cache
 C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibrary\AspLibrary\Tool\obj\Debug\Tool.dll
 C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibrary\AspLibrary\Tool\obj\Debug\Tool.pdb
+C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibraryWithApi\Tool\bin\Debug\Tool.dll
+C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibraryWithApi\Tool\bin\Debug\Tool.pdb
+C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibraryWithApi\Tool\obj\Debug\Tool.csprojAssemblyReference.cache
+C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibraryWithApi\Tool\obj\Debug\Tool.dll
+C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibraryWithApi\Tool\obj\Debug\Tool.pdb
