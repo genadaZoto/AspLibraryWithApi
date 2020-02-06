@@ -3,14 +3,22 @@
     ViewBag.Title = "Search";
 }
 
+<h4>Your search result...</h4>
 
-<div>
+<div class="row text-center">
     @foreach (Library.Models.BookModel item in Model)
     {
-        <h2>@item.Title</h2>
-        <h3>@item.Author</h3>
-        <h3>@item.Category</h3>
-        <h3>@item.Description</h3>
-        <img src="@item.Image" />
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="@item.Image" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">@item.Title</h4>
+                    <p class="card-text">Author: @item.Author</p>
+                    <p class="card-text">Category:  @item.Category</p>
+                    <p class="card-text">Description: @item.Description</p>
+                </div>
+
+            </div>
+        </div>
     }
 </div>

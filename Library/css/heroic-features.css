@@ -7,9 +7,11 @@ body {
   padding-top: 56px;
 }
 
+.navbar {
+    background-color: #225381;
+}
 .display-3 {
     font-size: 30px;
-    background-image: url(~/BookImages/books.jpg);
     font-weight: 600;
 }
 
@@ -50,3 +52,28 @@ a:hover{
 .card-img-top{
     height: 60%;
 }
+
+.pagination{
+    display: inline-block;
+    background-color: aquamarine;
+    margin: 0 auto;
+    font-size: 20px;
+    
+}
+
+    .pagination a {
+        padding: 8px 16px;
+        text-decoration: none;
+        color: black;
+    }
+
+.loginDiv {
+    margin: 20% 0;
+}
+
+.search{
+    margin: 0 auto;
+    padding: 5%;
+}
+
+

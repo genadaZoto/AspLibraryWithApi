@@ -45,40 +45,33 @@
     <!-- /.row -->
 </div>
 <!-- /.container -->
+
 <!---start-pagination----->
-<div class="pagenation">
-    <div class="pagenation">
-        <ul>
+
+    <div class="pagination">
+        
             @{
                 int next = ViewBag.CurrentPage + 1;
 
 
                 if (next > 2)
                 {
-
                     int prev = ViewBag.CurrentPage - 1;
-                    @:<li><a href="/Home/Index/@prev" style="margin-right:10px;">&laquo;</a></li>
-
-
+                    @:<a href="/Home/Index/@prev" style="margin-right:10px;">&laquo;</a>
                 }
-
 
                 for (int i = ViewBag.CurrentPage; i <= ViewBag.CurrentPage + 5 && i <= ViewBag.MaxPages; i++)
                 {
-                    @:<li><a href="/Home/Index/@i">@i</a></li>
+                    @:<a href="/Home/Index/@i">@i</a>
                 }
 
                 if (next <= ViewBag.MaxPages)
 
                 {
-                    @:<li><a href="/Home/Index/@next">&raquo;</a></li>
-
-
-
-
+                    @:<a href="/Home/Index/@next">&raquo;</a>
                 }
             }
-        </ul>
+       
     </div>
-    <div class="clearfix"> </div>
+   
     <!---End-pagination----->
