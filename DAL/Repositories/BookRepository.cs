@@ -97,12 +97,12 @@ namespace DAL.Repositories
         {
             int toSkip = (page - 1) * nb;
             //Command cmd = new Command("SELECT * FROM Book ORDER BY IdBook ASC OFFSET @toSkip ROWS FETCH NEXT @nb ROWS ONLY");
-            Command cmd = new Command($"SELECT   * FROM Book order by IdBook  OFFSET ({toSkip}) ROWS FETCH NEXT ({nb}) ROWS ONLY");
+            SelectAllCommand= "SELECT   * FROM Book order by IdBook  OFFSET @toSkip ROWS FETCH NEXT @nb  ROWS ONLY";
             Dictionary<string, object> QueryParameters = new Dictionary<string, object>();
             QueryParameters.Add("toSkip", toSkip);
             QueryParameters.Add("nb", nb);
 
-            return base._oconn.ExecuteReader<Book>(cmd, Map);
+            return base.getAll(Map, QueryParameters);
         }
 
 
