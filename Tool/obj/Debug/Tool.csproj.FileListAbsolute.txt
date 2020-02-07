@@ -19,3 +19,9 @@ C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibraryWithApi\Tool\bin\Debug
 C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibraryWithApi\Tool\obj\Debug\Tool.csprojAssemblyReference.cache
 C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibraryWithApi\Tool\obj\Debug\Tool.dll
 C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibraryWithApi\Tool\obj\Debug\Tool.pdb
+C:\Users\g.zoto\Downloads\michaelProject\LibraryWithApi\AspLibraryWithApi\Tool\bin\Debug\Tool.dll
+C:\Users\g.zoto\Downloads\michaelProject\LibraryWithApi\AspLibraryWithApi\Tool\bin\Debug\Tool.pdb
+C:\Users\g.zoto\Downloads\michaelProject\LibraryWithApi\AspLibraryWithApi\Tool\obj\Debug\Tool.csprojAssemblyReference.cache
+C:\Users\g.zoto\Downloads\michaelProject\LibraryWithApi\AspLibraryWithApi\Tool\obj\Debug\Tool.csproj.CoreCompileInputs.cache
+C:\Users\g.zoto\Downloads\michaelProject\LibraryWithApi\AspLibraryWithApi\Tool\obj\Debug\Tool.dll
+C:\Users\g.zoto\Downloads\michaelProject\LibraryWithApi\AspLibraryWithApi\Tool\obj\Debug\Tool.pdb

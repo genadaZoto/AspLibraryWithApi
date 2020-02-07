@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ToolBox.Database;
 
 namespace DAL.Repositories
 {
@@ -25,6 +26,30 @@ namespace DAL.Repositories
             return base.getAll(Map);
         }
 
+        //Methode qui n'existe pas dans baserepository, il faut la créer ici parce que j'ai besoin que dans cette model
+        public int getTotal(Func<SqlDataReader, BookCopy> callBack,
+            Dictionary<string, object> QueryParameters = null)
+        {
+            Command cmd = new Command(SelectAllCommand);
+            if (QueryParameters != null)
+            {
+                foreach (KeyValuePair<string, object> item in QueryParameters)
+                {
+                    cmd.AddParameter(item.Key, item.Value);
+                }
+            }
+            return (int)_oconn.ExecuteScalar(cmd);
+        }
+        public int getNbBookCopy(int idBook)
+        {
+            SelectAllCommand = "SELECT COUNT(*) from bookcopy where bookcopy.Available= 1 and BookCopy.IdBook = @idBook";
+            Dictionary<string, object> QueryParameters = new Dictionary<string, object>();
+            QueryParameters.Add("idBook", idBook);
+            return getTotal(Map, QueryParameters);
+
+            //Command cmd = new Command("SELECT COUNT(*) from bookcopy where bookcopy.Available= 1 and BookCopy.IdBook = idBook");
+            //return (int)base._oconn.ExecuteScalar(cmd);
+        }
         public override BookCopy GetOne(int id)
         {
             Dictionary<string, object> Parameters = new Dictionary<string, object>();

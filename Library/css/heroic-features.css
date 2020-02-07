@@ -46,7 +46,7 @@ a:hover{
 }
 
 .formulaire{
-    padding: 4% 30%;
+    padding: 7% 30%;
 }
 
 .card-img-top{
@@ -54,21 +54,19 @@ a:hover{
 }
 
 .pagination{
-    display: inline-block;
-    background-color: aquamarine;
-    margin: 0 auto;
-    font-size: 20px;
-    
+    text-align: center;
+    margin: 2% 50%;
+    font-size: 20px;   
 }
 
-    .pagination a {
-        padding: 8px 16px;
-        text-decoration: none;
-        color: black;
-    }
+.pagination a {
+   padding: 8px 16px;
+   text-decoration: none;
+   color: black;
+}
 
 .loginDiv {
-    margin: 20% 0;
+    margin: 8% 0;
 }
 
 .search{
@@ -76,4 +74,9 @@ a:hover{
     padding: 5%;
 }
 
-
+.profile {
+    margin: 7% 20% 17% 20%;
+}
+.profileOptions{
+    color: black;
+}

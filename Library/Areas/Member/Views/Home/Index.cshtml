@@ -3,56 +3,76 @@
 
 
 
-<div>
-    <h4>ProfileModel</h4>
-    <hr />
-    <div class="row">
-        <div class="col-2">
-            <div>
-                Nom
+@*<div class="profile">
+        <h4>Your profile </h4>
+        <hr />
+        <div class="row">
+            <div class="col-2">
+                <div>
+                    Nom
+                </div>
+                <div>
+                    @Model.Name
+                </div>
             </div>
-            <div>
-                @Model.Name
+            <br />
+            <div class="col-2">
+                <div>
+                    Prénom
+                </div>
+                <div>
+                    @Model.Surname
+                </div>
             </div>
-        </div>
-        <br />
-        <div class="col-2">
-            <div>
-                Prénom
+            <br />
+            <div class="col-2">
+                <div>
+                    Surnom
+                </div>
+                <div>
+                    @Model.Adress
+                </div>
             </div>
-            <div>
-                @Model.Surname
+            <br />
+            <div class="col-2">
+                <div>
+                    Email
+                </div>
+                <div>
+                    @Model.Email
+                </div>
             </div>
-        </div>
-        <br />
-        <div class="col-2">
-            <div>
-                Surnom
-            </div>
-            <div>
-                @Model.Adress
-            </div>
-        </div>
-        <br />
-        <div class="col-2">
-            <div>
-                Email
-            </div>
-            <div>
-                @Model.Email
-            </div>
-        </div>
-        <div class="col-2">
+            <div class="col-2">
 
-            <div>
-                <img src="@Model.Photo" />
+                <div class="imgProfile">
+                    <img src="@Model.Photo" />
+                </div>
             </div>
         </div>
-    </div>
-    <td>
-        @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-        @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-    </td>
-</div>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </div>*@
 
+
+        <div class="profile">
+            <div class="row text-center">
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    
+                        <img class="card-img-top" src="@Model.Photo" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Name: @Model.Name</h4>
+                            <p class="card-text">Surname: @Model.Surname</p>
+                            <p class="card-text">Adress: @Model.Adress</p>
+                            <p class="card-text">Email: @Model.Email</p>
+                        </div>
+                   
+                </div>
+
+                <div class="profileOptions"> @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) </div>
+            </div>
+        </div>
+ 

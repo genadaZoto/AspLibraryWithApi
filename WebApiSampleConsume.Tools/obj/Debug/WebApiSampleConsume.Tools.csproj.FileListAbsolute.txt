@@ -23,3 +23,12 @@ C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibraryWithApi\WebApiSampleCo
 C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibraryWithApi\WebApiSampleConsume.Tools\obj\Debug\WebApiSampleConsume.Tools.csproj.CopyComplete
 C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibraryWithApi\WebApiSampleConsume.Tools\obj\Debug\WebApiSampleConsume.Tools.dll
 C:\Users\Ola&Noemie\Desktop\portfolio\ProjetAsp\AspLibraryWithApi\WebApiSampleConsume.Tools\obj\Debug\WebApiSampleConsume.Tools.pdb
+C:\Users\g.zoto\Downloads\michaelProject\LibraryWithApi\AspLibraryWithApi\WebApiSampleConsume.Tools\bin\Debug\WebApiSampleConsume.Tools.dll
+C:\Users\g.zoto\Downloads\michaelProject\LibraryWithApi\AspLibraryWithApi\WebApiSampleConsume.Tools\bin\Debug\WebApiSampleConsume.Tools.pdb
+C:\Users\g.zoto\Downloads\michaelProject\LibraryWithApi\AspLibraryWithApi\WebApiSampleConsume.Tools\bin\Debug\Newtonsoft.Json.dll
+C:\Users\g.zoto\Downloads\michaelProject\LibraryWithApi\AspLibraryWithApi\WebApiSampleConsume.Tools\bin\Debug\Newtonsoft.Json.xml
+C:\Users\g.zoto\Downloads\michaelProject\LibraryWithApi\AspLibraryWithApi\WebApiSampleConsume.Tools\obj\Debug\WebApiSampleConsume.Tools.csprojAssemblyReference.cache
+C:\Users\g.zoto\Downloads\michaelProject\LibraryWithApi\AspLibraryWithApi\WebApiSampleConsume.Tools\obj\Debug\WebApiSampleConsume.Tools.csproj.CoreCompileInputs.cache
+C:\Users\g.zoto\Downloads\michaelProject\LibraryWithApi\AspLibraryWithApi\WebApiSampleConsume.Tools\obj\Debug\WebApiSampleConsume.Tools.csproj.CopyComplete
+C:\Users\g.zoto\Downloads\michaelProject\LibraryWithApi\AspLibraryWithApi\WebApiSampleConsume.Tools\obj\Debug\WebApiSampleConsume.Tools.dll
+C:\Users\g.zoto\Downloads\michaelProject\LibraryWithApi\AspLibraryWithApi\WebApiSampleConsume.Tools\obj\Debug\WebApiSampleConsume.Tools.pdb

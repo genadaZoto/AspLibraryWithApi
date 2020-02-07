@@ -18,17 +18,22 @@ namespace Library.Areas.Member.Controllers
         // GET: Member/AddBook
         public ActionResult Index(int IdBook)
         {
+            int IdReader = SessionUtils.ConnectedUser.IdReader; 
+
             DateTime today = DateTime.Today;
             BookReservationRepository BR = new BookReservationRepository(ConfigurationManager.ConnectionStrings["CnstrDev"].ConnectionString);
-            int IdBookCopyReserved = BR.InsertWithBook(SessionUtils.ConnectedUser.IdReader, IdBook, today);
-            if(IdBookCopyReserved == 0)
+           
+            BookCopyRepository Bcr = new BookCopyRepository(ConfigurationManager.ConnectionStrings["CnstrDev"].ConnectionString);
+            int nbBookAvailable = Bcr.getNbBookCopy(IdBook);
+            if (nbBookAvailable == 0)
             {
-                ViewBag.ErrorLoginMessage = "We couldn't save this book to you! No copy of this book available for the moment.";
-                return View();
+                SessionUtils.ErrorReservation = "We couldn't save this book to you! No copy of this book available for the moment.";
+                return RedirectToAction("Index", new { controller = "Home", area = "" });
             }
 
             else
             {
+                int IdBookCopyReserved = BR.InsertWithBook(SessionUtils.ConnectedUser.IdReader, IdBook, today);
                 BookRepository br = new BookRepository(ConfigurationManager.ConnectionStrings["CnstrDev"].ConnectionString);
                 Book B = br.GetOne(IdBook);
                 BookModel Bm = MapToDbModels.BookToBookModel(B);

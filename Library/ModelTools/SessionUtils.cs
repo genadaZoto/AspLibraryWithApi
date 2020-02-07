@@ -39,5 +39,21 @@ namespace Library.ModelTools
                 HttpContext.Current.Session["ConnectedUser"] = value;
             }
         }
+
+        public static string ErrorReservation
+        {
+            get
+            {
+                if(HttpContext.Current.Session["ErrorReservation"] != null)
+                {
+                    return (string)HttpContext.Current.Session["ErrorReservation"];
+                }
+                return null;
+            }
+            set
+            {
+                HttpContext.Current.Session["ErrorReservation"] = value;
+            }
+        }
     }
 }

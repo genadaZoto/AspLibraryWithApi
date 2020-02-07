@@ -1,4 +1,13 @@
-﻿<!-- Page Content -->
+﻿
+@*pour afficher le message de errorreservation*@
+@if (Library.ModelTools.SessionUtils.ErrorReservation != null)
+{
+    <center>
+        <p class="alert alert-danger">@Library.ModelTools.SessionUtils.ErrorReservation</p>
+    </center>
+}
+
+<!-- Page Content -->
 <div class="container">
 
     <!-- Jumbotron Header -->
@@ -45,33 +54,32 @@
     <!-- /.row -->
 </div>
 <!-- /.container -->
-
 <!---start-pagination----->
 
-    <div class="pagination">
-        
-            @{
-                int next = ViewBag.CurrentPage + 1;
+<div class="pagination">
+
+    @{
+        int next = ViewBag.CurrentPage + 1;
 
 
-                if (next > 2)
-                {
-                    int prev = ViewBag.CurrentPage - 1;
-                    @:<a href="/Home/Index/@prev" style="margin-right:10px;">&laquo;</a>
-                }
+        if (next > 2)
+        {
+            int prev = ViewBag.CurrentPage - 1;
+            @:<a href="/Home/Index/@prev" style="margin-right:10px;">&laquo;</a>
+        }
 
-                for (int i = ViewBag.CurrentPage; i <= ViewBag.CurrentPage + 5 && i <= ViewBag.MaxPages; i++)
-                {
-                    @:<a href="/Home/Index/@i">@i</a>
-                }
+        for (int i = ViewBag.CurrentPage; i <= ViewBag.CurrentPage + 5 && i <= ViewBag.MaxPages; i++)
+        {
+            @:<a href="/Home/Index/@i">@i</a>
+        }
 
-                if (next <= ViewBag.MaxPages)
+        if (next <= ViewBag.MaxPages)
 
-                {
-                    @:<a href="/Home/Index/@next">&raquo;</a>
-                }
-            }
-       
-    </div>
-   
-    <!---End-pagination----->
+        {
+            @:<a href="/Home/Index/@next">&raquo;</a>
+        }
+    }
+
+</div>
+
+<!---End-pagination----->

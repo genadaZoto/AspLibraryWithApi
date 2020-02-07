@@ -79,10 +79,6 @@ namespace DAL.Repositories
             Dictionary<string, object> QueryParameters = new Dictionary<string, object>();
             QueryParameters.Add("search", search);
             return base.getAll(Map, QueryParameters);
-
-
-            //Command cmd = new Command($"SELECT * FROM Book WHERE title like '%{search}%' or author like '%{search}%'");
-            //return base._oconn.ExecuteReader<Book>(cmd, Map);
         }
 
 
