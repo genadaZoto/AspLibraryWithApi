@@ -57,22 +57,82 @@
     </div>*@
 
 
-        <div class="profile">
-            <div class="row text-center">
 
-                <div class="col-lg-3 col-md-6 mb-4">
-                    
-                        <img class="card-img-top" src="@Model.Photo" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Name: @Model.Name</h4>
-                            <p class="card-text">Surname: @Model.Surname</p>
-                            <p class="card-text">Adress: @Model.Adress</p>
-                            <p class="card-text">Email: @Model.Email</p>
-                        </div>
-                   
-                </div>
+@*2 solution
+    
+    <div class="profile">
+    <div class="row text-center">
 
-                <div class="profileOptions"> @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+
+            <img class="card-img-top" src="@Model.Photo" alt="">
+            <div class="card-body">
+                <h4 class="card-title">Name: @Model.Name</h4>
+                <p class="card-text">Surname: @Model.Surname</p>
+                <p class="card-text">Adress: @Model.Adress</p>
+                <p class="card-text">Email: @Model.Email</p>
+            </div>
+
+        </div>
+
+        <div class="profileOptions"> @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) </div>
+    </div>
+</div>*@
+
+
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Profils</h1>
+    </div>
+
+    <!-- Content Row -->
+    <div class="row">
+        <div class="col-2">
+            <div>
+                Nom
+            </div>
+            <div>
+                @Model.Name
             </div>
         </div>
- 
+        <br />
+        <div class="col-2">
+            <div>
+                Prénom
+            </div>
+            <div>
+                @Model.Surname
+            </div>
+        </div>
+        <br />
+        <div class="col-2">
+            <div>
+                Surnom
+            </div>
+            <div>
+                @Model.Adress
+            </div>
+        </div>
+        <br />
+        <div class="col-2">
+            <div>
+                Email
+            </div>
+            <div>
+                @Model.Email
+            </div>
+        </div>
+        <div class="col-2">
+
+            <div>
+                <img src="@Model.Photo" />
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+<!-- /.container-fluid -->
