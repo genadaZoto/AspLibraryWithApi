@@ -117,14 +117,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Xmas - Member Area</title>
+    <title>Library - Member Area</title>
 
     <!-- Custom fonts for this template-->
-    <link href="~/Library/Member/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Areas/Member/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="~/Library/Member/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="~/Areas/Member/css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
@@ -138,9 +138,6 @@
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="~/Membre/Home/Index">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <img src="~/images/logo1.png" style="width:100%;" />
-                </div>
             </a>
 
             <!-- Divider -->
@@ -158,11 +155,11 @@
                 }
             }
 
-            <a class="nav-link" href="~/Membre/Home/Index">
+            <a class="nav-link" href="~/Member/Home/Index">
 
                 <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
 
-                <span>Profil</span>
+                <span>Profile</span>
             </a>
         </li>
 
@@ -173,33 +170,10 @@
 
         <!-- Heading -->
         <div class="sidebar-heading">
-            Gestion du compte
+            Account
         </div>
 
-        <!-- Nav Item - Pages Collapse Menu -->
-        @{
-            if (ViewBag.Current.Contains("Groupe"))
-            {
-                @:<li class="nav-item active">
-            }
-            else
-            {
-                 @:<li class="nav-item">
-            }
-        }
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-
-            <i class="fas fa-user fa-sm "></i>
-
-            <span>Groupes</span>
-        </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item" href="~/Membre/Group/Index">Mes groupes</a>
-                <a class="collapse-item" href="~/Membre/Group/Admin">Mes groupes(Admin)</a>
-            </div>
-        </div>
-    </li>
+       
 
     <!-- Nav Item - Charts -->
     @{
@@ -212,25 +186,29 @@
                 @:<li class="nav-item">
             }
     }
-    <a class="nav-link" href="~/Membre/Cadeaux/Index">
-        <i class="fas fa-fw fa-gift"></i>
-        <span>Cadeaux</span>
+    <a class="nav-link" href="/Home/Index">
+        <i class="fas fa-shopping-cart"></i>
+        <span>Borrow Book</span>
     </a>
 </li>
 
-<!-- Nav Item - Tables -->
-<li class="nav-item">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEvent" aria-expanded="true" aria-controls="collapseEvent">
-        <i class="fas fa-fw fa-calendar-check"></i>
-        <span>Evénements</span>
+             <!-- Nav Item - Charts -->
+    @{
+        if (ViewBag.Current.Contains("Cadeaux"))
+        {
+            @:<li class="nav-item active">
+            }
+            else
+            {
+                @:<li class="nav-item">
+            }
+    }
+    <a class="nav-link" href="~/Member/Book/Index">
+        <i class="fas fa-book"></i>
+        <span>My Books</span>
     </a>
-    <div id="collapseEvent" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-        <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="#">Mes événements</a>
-            <a class="collapse-item" href="#">Créer un événement</a>
-        </div>
-    </div>
 </li>
+
 
 <!-- Divider -->
 <hr class="sidebar-divider d-none d-md-block">
@@ -292,7 +270,7 @@
     <footer class="sticky-footer bg-white">
         <div class="container my-auto">
             <div class="copyright text-center my-auto">
-                <span>Copyright &copy; Xmas 2019</span>
+                <span>Copyright &copy; Genada Zoto 2020</span>
             </div>
         </div>
     </footer>
@@ -311,14 +289,14 @@
 
 
 <!-- Bootstrap core JavaScript-->
-<script src="~/Library/Member/vendor/jquery/jquery.min.js"></script>
-<script src="~/Library/Member/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/Areas/Member/vendor/jquery/jquery.min.js"></script>
+<script src="~/Areas/Member/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Core plugin JavaScript-->
-<script src="~/Library/Member/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="~/Areas/Member/vendor/jquery-easing/jquery.easing.min.js"></script>
 
 <!-- Custom scripts for all pages-->
-<script src="~/Library/Member/js/sb-admin-2.min.js"></script>
+<script src="~/Areas/Member/js/sb-admin-2.min.js"></script>
 
 
 </body>
