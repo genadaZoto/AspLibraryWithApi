@@ -80,59 +80,62 @@
 </div>*@
 
 
-<div class="container-fluid">
+    <div class="container-fluid">
 
-    <!-- Page Heading -->
-    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Profils</h1>
+        <!-- Page Heading -->
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Profile</h1>
+        </div>
+
+        <!-- Content Row -->
+        <div class="row">
+            <div class="col-2">
+                <div>
+                    Name
+                </div>
+                <div>
+                    @Model.Name
+                </div>
+            </div>
+            <br />
+            <div class="col-2">
+                <div>
+                    Surname
+                </div>
+                <div>
+                    @Model.Surname
+                </div>
+            </div>
+            <br />
+            <div class="col-2">
+                <div>
+                    Adress
+                </div>
+                <div>
+                    @Model.Adress
+                </div>
+            </div>
+            <br />
+            <div class="col-2">
+                <div>
+                    Email
+                </div>
+                <div>
+                    @Model.Email
+                </div>
+            </div>
+            <div class="col-2">
+
+                <div>
+                    <img src="@Model.Photo" />
+                </div>
+            </div>
+        </div>
+
+        <td>
+            @Html.ActionLink("Edit", "Edit", new {  id=Model.IdReader }) |
+            @Html.ActionLink("Delete", "Delete", new { id=Model.IdReader })
+        </td>
+
     </div>
-
-    <!-- Content Row -->
-    <div class="row">
-        <div class="col-2">
-            <div>
-                Nom
-            </div>
-            <div>
-                @Model.Name
-            </div>
-        </div>
-        <br />
-        <div class="col-2">
-            <div>
-                Prénom
-            </div>
-            <div>
-                @Model.Surname
-            </div>
-        </div>
-        <br />
-        <div class="col-2">
-            <div>
-                Surnom
-            </div>
-            <div>
-                @Model.Adress
-            </div>
-        </div>
-        <br />
-        <div class="col-2">
-            <div>
-                Email
-            </div>
-            <div>
-                @Model.Email
-            </div>
-        </div>
-        <div class="col-2">
-
-            <div>
-                <img src="@Model.Photo" />
-            </div>
-        </div>
-    </div>
-
-
-
-</div>
 <!-- /.container-fluid -->

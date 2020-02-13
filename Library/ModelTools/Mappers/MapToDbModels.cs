@@ -51,6 +51,22 @@ namespace Library.ModelTools.Mappers
             };
         }
 
+   
+        internal static Reader EditReader (EditProfile pm)
+        {
+            
+            return new Reader()
+            {
+                IdReader = pm.Id,
+                Name = pm.Name,
+                Surname = pm.Surname,
+                Email = pm.Email,
+                Adress = pm.Adress,
+                Password=pm.Password
+            };
+        }
+
+
         internal static Reader LoginToReader(LoginModel lm)
         {
             return new Reader()

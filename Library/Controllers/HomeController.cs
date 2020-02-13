@@ -128,9 +128,9 @@ namespace Library.Controllers
         {
             BookRepository BR = new BookRepository(ConfigurationManager.ConnectionStrings["CnstrDev"].ConnectionString);
             List<BookModel> Lbm = BR.GetFromSearch(txtSearch).Select(b => MapToDbModels.BookToBookModel(b)).ToList();
-            if(Lbm == null)
+            if(Lbm.Count() == 0)
             {
-                ViewBag.ErrorMessage = "Sorry we couldn't find the book you entered!";
+                ViewBag.ErrorMessage = "Sorry, we couldn't find the book you were looking for!";
                 return View();
             }
            

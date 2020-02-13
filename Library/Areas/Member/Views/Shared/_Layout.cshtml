@@ -137,31 +137,19 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="~/Membre/Home/Index">
-            </a>
+            <div class="sidebar-brand d-flex align-items-center justify-content-center"><i class="fas fa-book-reader"></i> My Library</div>
+            
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Profil -->
-            @{
-                if (ViewBag.Current == "Profil")
-                {
-                    @:<li class="nav-item active">
-                }
-                else
-                {
-                   @:<li class="nav-item">
-                }
-            }
-
-            <a class="nav-link" href="~/Member/Home/Index">
-
-                <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-
+          
+             <li class="nav-item">
+                <a class="nav-link" href="~/Member/Home/Index"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                 <span>Profile</span>
-            </a>
-        </li>
+                </a>
+            </li>
 
 
 
@@ -176,38 +164,28 @@
        
 
     <!-- Nav Item - Charts -->
-    @{
-        if (ViewBag.Current.Contains("Cadeaux"))
-        {
-            @:<li class="nav-item active">
-            }
-            else
-            {
-                @:<li class="nav-item">
-            }
-    }
-    <a class="nav-link" href="/Home/Index">
-        <i class="fas fa-shopping-cart"></i>
-        <span>Borrow Book</span>
-    </a>
-</li>
+    
+     
+       <li class="nav-item">
+            <a class="nav-link" href="/Home/Index"><i class="fas fa-shopping-cart"></i>
+                <span>Borrow Book</span>
+            </a>
+        </li>
 
              <!-- Nav Item - Charts -->
-    @{
-        if (ViewBag.Current.Contains("Cadeaux"))
-        {
-            @:<li class="nav-item active">
-            }
-            else
-            {
-                @:<li class="nav-item">
-            }
-    }
-    <a class="nav-link" href="~/Member/Book/Index">
-        <i class="fas fa-book"></i>
-        <span>My Books</span>
-    </a>
-</li>
+        <li class="nav-item">
+             <a class="nav-link" href="~/Member/Book/Index"><i class="fas fa-book"></i>
+                <span>My Books</span>
+            </a>
+        </li>
+            
+             <!-- Nav Item - Charts -->
+  
+        <li class="nav-item">
+            <a class="nav-link" href="/Home/Logout"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                <span>Log out</span>
+            </a>
+        </li>
 
 
 <!-- Divider -->
@@ -247,14 +225,6 @@
                         <span class="mr-2 d-none d-lg-inline text-gray-600 small">@Library.ModelTools.SessionUtils.ConnectedUser.Name</span>
                         <img class="img-profile rounded-circle" src="@Library.ModelTools.SessionUtils.ConnectedUser.Photo">
                     </a>
-                    <!-- Dropdown - User Information -->
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-
-                        <a class="dropdown-item" href="/Home/Logout">
-                            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                            Logout
-                        </a>
-                    </div>
                 </li>
 
             </ul>

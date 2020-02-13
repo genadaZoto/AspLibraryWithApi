@@ -20,6 +20,11 @@ namespace Library.Areas.Member.Controllers
             ViewBag.Current = "Books";
             BookRepository BR = new BookRepository(ConfigurationManager.ConnectionStrings["CnstrDev"].ConnectionString);
             List<BookMemberModel> Bm = BR.GetBooksFromReader(SessionUtils.ConnectedUser.IdReader).Select(b => MapToDbModels.BookToBookMemberModel(b)).ToList();
+            if(Bm.Count() == 0)
+            {
+                ViewBag.NoBooks = "There are no books in your account!";
+                return View();
+            }
             return View(Bm);
         }
     }

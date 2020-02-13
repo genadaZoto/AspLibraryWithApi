@@ -126,6 +126,7 @@
     <Compile Include="Areas\Member\Controllers\HomeController.cs" />
     <Compile Include="Areas\Member\MemberAreaRegistration.cs" />
     <Compile Include="Areas\Member\Models\BookMemberModel.cs" />
+    <Compile Include="Areas\Member\Models\EditProfile.cs" />
     <Compile Include="Areas\Member\Models\ProfileModel.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -2074,6 +2075,7 @@
     <Content Include="Areas\Member\vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
     <Content Include="Areas\Member\vendor\jquery\jquery.min.map" />
     <Content Include="Areas\Member\vendor\jquery\jquery.slim.min.map" />
+    <Content Include="Areas\Member\Views\Home\Edit.cshtml" />
     <None Include="packages.config" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.css.map" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css.map" />
