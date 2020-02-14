@@ -1,35 +1,49 @@
 ﻿
+    <div class="container">
 
+        <!-- Jumbotron Header -->
+        <header class="jumbotron my-4">
+            <p class="display-3">
+                Reading gives us someplace to go when we have to stay where we are.
+            </p>
+            <h6>–Mason Cooley</h6>
+          
 
-<h4>Your search result...</h4>
+        </header>
 
-<div class="row text-center">
+        <h4>Your search result...</h4>
 
-    @if (ViewBag.ErrorMessage != null)
-    {
-        <h5>@ViewBag.ErrorMessage</h5>
-    }
-    else
-    {
-        foreach (Library.Models.BookModel item in Model)
-        {
+        <div class="row text-center">
 
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="card h-100">
-                    <img class="card-img-top" src="@item.Image" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">@item.Title</h4><br />
-                        <p class="card-text"><strong>Author: </strong>@item.Author</p><br />
-                        <p class="card-text"><strong>Category:  </strong>@item.Category</p><br />
-                        <p class="card-text"><strong>Description: </strong>@item.Description</p><br />
+            @if (ViewBag.ErrorMessage != null)
+            {
+                <span class="noResultSearch">
+                   <h5>@ViewBag.ErrorMessage</h5>
+                </span>
+                
+            }
+            else
+            {
+                foreach (Library.Models.BookModel item in Model)
+                {
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="@item.Image" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">@item.Title</h4><br />
+                                <p class="card-text"><strong>Author: </strong>@item.Author</p><br />
+                                <p class="card-text"><strong>Category:  </strong>@item.Category</p><br />
+                                <p class="card-text"><strong>Description: </strong>@item.Description</p><br />
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
 
-        }
+                }
 
-    }
+            }
 
 
-</div>
+        </div>
+    </div>

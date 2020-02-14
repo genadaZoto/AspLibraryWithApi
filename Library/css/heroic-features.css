@@ -15,12 +15,6 @@ body {
     font-weight: 600;
 }
 
-.logo {
-    font-size: 30px;
-    font-weight: 700;
-    font-family:'Adobe Arabic';
-    color:white;
-}
 .nav-item {
     color: white !important;
     padding: 10px;
@@ -69,14 +63,6 @@ a:hover{
     margin: 8% 0;
 }
 
-.search{
-    margin: 0 auto;
-    padding: 5%;
-}
-
-.profile {
-    margin: 7% 20% 17% 20%;
-}
-.profileOptions{
-    color: black;
+.noResultSearch{
+    margin: 5% 10% 35% 10%;
 }
