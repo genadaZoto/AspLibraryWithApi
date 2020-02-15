@@ -4,8 +4,6 @@
     ViewBag.Title = "Edit";
 }
 
-<h2>Edit</h2>
-
 
 <div class="form-horizontal">
     <h4>Edit Profile</h4>
@@ -30,14 +28,19 @@
             </div>
         </div>
         <div class="form-group">
-            <label class="control-label col-md-2">Adress</label> <div class="col-md-10">
-                <input type="text" class="form-control" name="Surname" value="@Model.Adress" />
+            <label class="control-label col-md-2">Address</label> <div class="col-md-10">
+                <input type="text" class="form-control" name="Adress" value="@Model.Adress" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">Password</label> <div class="col-md-10">
+                <input type="text" class="form-control" name="Password"/>
             </div>
         </div>
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
+                <input type="submit" value="Save" class="btn btn-default myColor" />
             </div>
         </div>
     </form>

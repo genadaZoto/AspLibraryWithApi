@@ -1,59 +1,75 @@
 ﻿
-@*pour afficher le message de errorreservation*@
-@if (Library.ModelTools.SessionUtils.ErrorReservation != null)
-{
-    <center>
-        <p class="alert alert-danger">@Library.ModelTools.SessionUtils.ErrorReservation</p>
-    </center>
-}
 
 
 <!-- Page Content -->
-<div class="container">
+    <div class="container">
 
-    <!-- Jumbotron Header -->
-    <header class="jumbotron my-4">
-        <p class="display-3">
-            Reading gives us someplace to go when we have to stay where we are.
-        </p>
-        <h6>–Mason Cooley</h6>
-        <div class="search">
-            <form method="post" action="/Home/Search">
-                <input class="search" type="text" name="txtSearch" placeholder="Search..." />
-                <button class="btn btn-primary btn-lg" type="submit"><i class="fas fa-search"></i></button>
-            </form>
-        </div>
+        <!-- Jumbotron Header -->
+        <!-- Jumbotron Header -->
+        <header class="jumbotron my-4">
+            <p class="display-3">
+                @{string[] quotes = new string[] {
+                  "\"Reading gives us someplace to go when we have to stay where we are.\"–Mason Cooley",
+                  "\"Love is the longing for the half of ourselves we have lost.\"― Milan Kundera, The Unbearable Lightness of Being",
+                  "\"And now that you don’t have to be perfect, you can be good.\" —John Steinbeck, East of Eden",
+                  "\"Only connect.\"— E. M. Foster, Howard's End",
+                  "\"Get busy living or get busy dying.\"— Stephen King, The Shawshank Redemption",
+                  "\"Memories warm you up from the inside. But they also tear you apart.\"― Haruki Murakami, Kafka on the Shore",
+                  "\"I took a deep breath and listened to the old brag of my heart: I am, I am, I am.\"— Sylvia Plath, The Bell Jar"};
 
-    </header>
+                    Random rnd = new Random();
+                    int length = quotes.Count();
+                    int nbr = rnd.Next(1, length) - 1;
 
-    <!-- Page Features -->
-    <div class="row text-center">
-        @foreach (Library.Models.BookModel item in Model)
+                    string quote = quotes[nbr];
+
+                    <h4 class="display-3">@quote</h4>}
+            </p>
+
+            <div class="search">
+                <form method="post" action="/Home/Search">
+                    <input class="search" type="text" name="txtSearch" placeholder="Search..." />
+                    <button class="btn btn-primary btn-lg myColor" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+        </header>
+
+        @*pour afficher le message de errorreservation*@
+        @if (Library.ModelTools.SessionUtils.ErrorReservation != null)
         {
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="card h-100">
-                    <img class="card-img-top" src="@item.Image" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">@item.Title</h4>
-                        <p class="card-text">@item.Author</p>
-                    </div>
-                    <div class="card-footer">
-                        @{
-                            if (Library.ModelTools.SessionUtils.IsConnected)
-                            {
-                                <form action="~/Member/AddBook/Index">
-                                    <input class="btn btn-primary" type="hidden" name="IdBook" value="@item.IdBook" /><br />
-                                    <button>Borrow</button>
-                                </form>
+            <center>
+                <p class="alert alert-danger">@Library.ModelTools.SessionUtils.ErrorReservation</p>
+            </center>
+        }
+        <!-- Page Features -->
+        <div class="row text-center">
+            @foreach (Library.Models.BookModel item in Model)
+            {
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="@item.Image" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">@item.Title</h4>
+                            <p class="card-text">@item.Author</p>
+                        </div>
+                        <div class="card-footer">
+                            @{
+                                if (Library.ModelTools.SessionUtils.IsConnected)
+                                {
+                                    <form action="~/Member/AddBook/Index">
+                                        <input class="btn btn-primary" type="hidden" name="IdBook" value="@item.IdBook" /><br />
+                                        <button class="tn btn-primary btn-lg myColor">Borrow</button>
+                                    </form>
+                                }
                             }
-                        }
+                        </div>
                     </div>
                 </div>
-            </div>
-        }
+            }
+        </div>
+        <!-- /.row -->
     </div>
-    <!-- /.row -->
-</div>
 <!-- /.container -->
 <!---start-pagination----->
 

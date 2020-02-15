@@ -17,7 +17,8 @@ namespace Library.Controllers
     public class HomeController : Controller
     {
         public ActionResult Index(int id=1)
-        {
+        { 
+
             ViewBag.CurrentPage = id;
             BookRepository BR = new BookRepository(ConfigurationManager.ConnectionStrings["CnstrDev"].ConnectionString);
             //List<BookModel> Lbm = BR.GetAll().Select(b => MapToDbModels.BookToBookModel(b)).ToList();
