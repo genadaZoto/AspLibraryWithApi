@@ -20,20 +20,10 @@ namespace WebApiSampleConsume.Tools
         /// </summary>
         private string URL;
 
-
-
-
         public Requester(string baseUrl)
         {
             this.URL = baseUrl;
         }
-
-
-
-
-
-
-
 
         /// <summary>
         /// Executes the request to the specified end point.

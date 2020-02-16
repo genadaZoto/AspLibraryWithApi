@@ -1,0 +1,19 @@
+﻿<p class="display-3">
+    @{string[] quotes = new string[] {
+                  "\"Reading gives us someplace to go when we have to stay where we are.\"–Mason Cooley",
+                  "\"Love is the longing for the half of ourselves we have lost.\"― Milan Kundera, The Unbearable Lightness of Being",
+                  "\"And now that you don’t have to be perfect, you can be good.\" —John Steinbeck, East of Eden",
+                  "\"Only connect.\"— E. M. Foster, Howard's End",
+                  "\"Get busy living or get busy dying.\"— Stephen King, The Shawshank Redemption",
+                  "\"Memories warm you up from the inside. But they also tear you apart.\"― Haruki Murakami, Kafka on the Shore",
+                  "\"I took a deep breath and listened to the old brag of my heart: I am, I am, I am.\"— Sylvia Plath, The Bell Jar"};
+
+        Random rnd = new Random();
+        int length = quotes.Count();
+        int nbr = rnd.Next(1, length) - 1;
+
+        string quote = quotes[nbr];
+
+        <h4 class="display-3">@quote</h4>}
+</p>
+

@@ -8,7 +8,7 @@ using WebApiSampleConsume.Tools.Models;
 
 namespace WebApiSampleConsume.Tools
 {
-   public class OpenLibraryRequester:Requester
+    public class OpenLibraryRequester : Requester
     {
         public OpenLibraryRequester() : base("https://openlibrary.org/api")
         {
@@ -23,10 +23,10 @@ namespace WebApiSampleConsume.Tools
             {
                 string CleanJson = json.Replace("var _OLBookInfo =", "").Replace(@"\", "");
                 CleanJson = CleanJson.Remove(CleanJson.Length - 2);
-                CleanJson = CleanJson.Replace("ISBN:","");
-                CleanJson = CleanJson.Substring(CleanJson.IndexOf(":") +1);
-                bookModel lc =   JsonConvert.DeserializeObject<bookModel>(CleanJson); //Using NewTonsoft nuget
-                 
+                CleanJson = CleanJson.Replace("ISBN:", "");
+                CleanJson = CleanJson.Substring(CleanJson.IndexOf(":") + 1);
+                bookModel lc = JsonConvert.DeserializeObject<bookModel>(CleanJson); //Using NewTonsoft nuget
+
 
                 return lc;
             }

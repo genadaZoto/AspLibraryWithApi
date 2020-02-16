@@ -2089,6 +2089,7 @@
     <Content Include="vendor\bootstrap\js\bootstrap.min.js.map" />
     <Content Include="vendor\jquery\jquery.min.map" />
     <Content Include="vendor\jquery\jquery.slim.min.map" />
+    <Content Include="Views\Shared\_Quotes.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\Library.DAL.csproj">
