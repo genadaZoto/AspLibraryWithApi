@@ -41,7 +41,7 @@ namespace Library.Areas.Member.Controllers
             Reader R = MapToDbModels.EditReader(Ep);
             if (Rr.Update(R))
             {
-                return RedirectToAction("index");
+                return RedirectToAction("Index");
             }
             else
             {

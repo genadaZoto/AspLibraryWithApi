@@ -17,7 +17,7 @@ namespace DAL.Repositories
             InsertCommand = @"INSERT INTO  Reader (Name, Surname, Email, Adress, Password)
                             OUTPUT inserted.idReader VALUES(@Name, @Surname, @Email, @Adress,@Password)";
             UpdateCommand = @"UPDATE  Reader
-                           SET Name = @Name,  Surname = @Surname,  Email= @Email, Adress = @Adress,  Password = @Password>
+                           SET Name = @Name,  Surname = @Surname,  Email= @Email, Adress = @Adress,  Password = @Password
                          WHERE IdReader = @IdReader ;";
             DeleteCommand = @"Delete from  Reader   WHERE IdReader  = @IdReader ;";
         }
